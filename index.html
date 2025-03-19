@@ -18,20 +18,19 @@
         <nav class="container d-flex justify-content-between align-items-center">
             <img src="img/logo BTS.png" title="logo escrita em preto do BTS - CCO Domínio público" alt="Logotipo do BTS" class="nav-img " loading="lazy">
             <ul class="nav mt-5">
-                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
-                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
-                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                <li class="nav-item"><a class="nav-link" href="#inicio" aria-label="Início">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria" aria-label="Galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato" aria-label="Contato">Contato</a></li>
             </ul>
 
             <div id="acessibilidade" class="menu-acessibilidade">
-                <button id="botao-acessibilidade" class="btn btn-primary rotacao-botao fw-bold">Acessibilidade</button>
+                <button id="botao-acessibilidade" class="btn btn-primary rotacao-botao fw-bold" aria-expanded="Botão de acessibilidade">Acessibilidade</button>
                 <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista ">
                     <button id="aumentar-fonte" class="btn btn-primary fw-bold">A +</button>
 
 
                     <button id="diminuir-fonte" class="btn btn-primary fw-bold">A -</button>
-                    <button id="alterna-contraste" class="btn btn-primary fw-bold"><i class="bi bi-shadow"></i></button>
-
+                    <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Modificar o contraste da tela"> <i class="bi bi-shadows"></i></button>
                 </div>
             </div>
 
@@ -42,7 +41,7 @@
 
     <main class="container my-5">
 
-        <section id="inicio" class="my-5">
+        <section id="inicio" class="my-5" aria-label="seção inicio">
             <div class="inicio-fundo d-flex justify-content-between align-items-center" title="foto dos membros do BTS - CCO Domínio público"> 
                 <div class="esquerda-conteudo">
 
@@ -55,7 +54,7 @@
             </div>
         </section>
 
-        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia">
+        <section id="tropicalia" class="my-5 pt-6 secao-tropicalia" tabindex="0" aria-label="Seção sobre o BTS">
             <div class="container d-flex align-items-center ">
                 <div class="col-5">
                     <h2>Quem é o BTS?</h2>
@@ -71,7 +70,7 @@
             </div>
         </section>
 
-        <section id="galeria">
+        <section id="galeria" tabindex="0" aria-label="seção galeria">
             <h2 class="text-center pt-5">Galeria</h2>
             <div class="container p-3 mt-3 fundo-galeria ">
 
@@ -90,7 +89,7 @@
             </div>
         </section>
 
-        <section id="contato">
+        <section id="contato" tabindex="0" aria-label="seção contato">
             <div class="container p-5 d-flex justify-content-center">
                 <div class="col-md-8 col-lg-10 rounded-5 formulario"> <!-- Caixa do formulário com 60% de largura -->
                     <h2 class="mb-3">Entre em contato</h2>
@@ -119,13 +118,15 @@
             </div>
         </section>
     </main>
-    <footer class="text-center p-3 fst-italic">
+    <footer class="text-center p-3 fst-italic" tabindex="0">
         <p>Acesse nossas redes:</p>
         <i class="bi bi-whatsapp"></i>
         <i class="bi bi-instagram"></i>
         <i class="bi bi-tiktok"></i>
         <p class="mt-3">Desenvolvido por Start by Alura. Projeto fictício sem fins comerciais.</p>
     </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
     <script src="script.js"></script>
 
 </body>
